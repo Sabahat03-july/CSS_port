@@ -1,0 +1,74 @@
+.header-container {
+    width: 100%;
+    height: auto; /* Changed to auto for better responsiveness */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding for small screens */
+}
+
+.header-boxes-container {
+    width: 100%; /* Set to 100% for full responsiveness */
+    max-width: 1200px; /* Optional max width for larger screens */
+    height: auto; /* Changed to auto */
+    background-color: white;
+    display: flex;
+    flex-direction: column; /* Change to column for mobile */
+    align-items: center;
+    box-shadow: 1px 4px 10px gray;
+}
+
+.hero-right-div {
+    width: 100%; /* Full width on small screens */
+    text-align: center; /* Center align text */
+}
+
+.header-image {
+    border-radius: 10px;
+    width: 100%; /* Full width for responsive image */
+    max-width: 250px; /* Max width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.title-head {
+    font-size: 24px; /* Responsive font size */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 28px;
+}
+
+.des-header {
+    margin-top: 20px;
+    font-size: 16px; /* Responsive font size */
+    padding: 0 20px; /* Add padding for small screens */
+}
+
+.hero-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    margin-top: 30px;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .header-boxes-container {
+        flex-direction: row; /* Row layout on larger screens */
+        justify-content: space-evenly;
+    }
+    
+    .hero-right-div {
+        width: 50%; /* Half width for larger screens */
+    }
+
+    .title-head {
+        font-size: 30px; /* Larger font size for desktop */
+    }
+
+    .des-header {
+        font-size: 18px; /* Larger font size for desktop */
+    }
+}

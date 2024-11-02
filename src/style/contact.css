@@ -1,0 +1,67 @@
+.contact-container {
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-title {
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    width: 90%;
+    max-width: 600px; /* Optional max width for larger screens */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 1px 4px 10px gray;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contact-input,
+.contact-textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+    border-color: #4CAF50; /* Highlight border on focus */
+    outline: none;
+}
+
+.contact-textarea {
+    resize: vertical; /* Allow vertical resizing */
+    height: 100px; /* Default height */
+}
+
+.contact-button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .contact-input,
+    .contact-textarea {
+        font-size: 14px; /* Smaller text for mobile */
+    }
+}

@@ -1,0 +1,55 @@
+.skills-container {
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-title {
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    width: 90%;
+    max-width: 800px; /* Optional max width for larger screens */
+    display: flex;
+    flex-wrap: wrap; /* Allows skills to wrap to the next line */
+    justify-content: space-around; /* Evenly space items */
+}
+
+.skill-item {
+    width: 30%; /* Responsive width */
+    background-color: white;
+    box-shadow: 1px 4px 10px gray;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px; /* Space between skills */
+    text-align: center; /* Center align text */
+}
+
+.skill-name {
+    font-size: 20px; /* Adjusted size for skill name */
+    margin: 0;
+}
+
+.skill-level {
+    font-size: 14px; /* Smaller size for skill level */
+    color: #666; /* Lighter text color */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .skill-item {
+        width: 100%; /* Full width for mobile */
+        margin: 10px 0; /* Space only on vertical */
+    }
+}
+
+@media (min-width: 768px) {
+    .skill-item {
+        width: 45%; /* Adjust width for larger screens */
+    }
+}
